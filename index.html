@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>David Chu's China Bistro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+      body { font-size: 16px; color: #fff; background-color: #61122f; font-family: 'Oxygen', sans-serif; }
+      #header-nav { background-color: #f6b319; border-radius: 0; border: 0; }
+      .navbar-brand h1 { color: #557c3e; font-size: 1.5em; font-weight: bold; margin-top: 0; }
+      #main-content { background-color: #fff; color: #000; padding: 20px; border-radius: 10px; margin-top: 20px; min-height: 400px; }
+      .jumbotron { background-color: #e7e7e7; padding: 30px; text-align: center; border-radius: 10px; }
+    </style>
+  </head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left visible-md visible-lg">
+            <div id="logo-img" alt="Logo image"></div>
+          </a>
+          <div class="navbar-brand">
+            <a href="index.html"><h1>David Chu's China Bistro</h1></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div id="main-content" class="container">
+    <div class="jumbotron">
+      <h2>Welcome to David Chu's China Bistro</h2>
+      <p>Click the button below to test the Specials feature!</p>
+      <p><a class="btn btn-primary btn-lg" href="#" onclick="$dc.loadMenuItems(); return false;" role="button">Specials (Random Category)</a></p>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/ajax-utils.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
